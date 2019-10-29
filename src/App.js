@@ -6,15 +6,33 @@ function App() {
     <div className="App">
       <div id="drum-machine">
         <div id="display">
-          <div class="drum-pad" id="btnQ">Q</div>
-          <div class="drum-pad" id="btnW">W</div>
-          <div class="drum-pad" id="btnE">E</div>
-          <div class="drum-pad" id="btnA">A</div>
-          <div class="drum-pad" id="btnS">S</div>
-          <div class="drum-pad" id="btnD">D</div>
-          <div class="drum-pad" id="btnZ">Z</div>
-          <div class="drum-pad" id="btnX">X</div>
-          <div class="drum-pad" id="btnC">C</div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="Q">Q</audio>
+          </div>
+          <div class="drum-pad">
+          <audio class="clip" src="" id="W">W</audio>
+          </div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="E">E</audio>
+          </div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="A">A</audio>
+          </div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="S">S</audio>
+          </div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="D">D</audio>
+          </div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="Z">Z</audio>
+          </div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="X">X</audio>
+          </div>
+          <div class="drum-pad">
+            <audio class="clip" src="" id="C">C</audio>
+          </div>
         </div>
       </div>
     </div>
