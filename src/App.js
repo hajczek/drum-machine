@@ -7,31 +7,58 @@ function App() {
       <div id="drum-machine">
         <div id="display">
           <div class="drum-pad">
-            <audio class="clip" src="" id="Q">Q</audio>
+            <audio class="clip" id="Q">
+              <source src="" type=""></source>
+              Q
+            </audio>
           </div>
           <div class="drum-pad">
-          <audio class="clip" src="" id="W">W</audio>
+            <audio class="clip" id="W">
+              <source src="" type=""></source>
+              W
+            </audio>
           </div>
           <div class="drum-pad">
-            <audio class="clip" src="" id="E">E</audio>
+            <audio class="clip" id="E">
+             <source src="" type=""></source>
+              E
+            </audio>
           </div>
           <div class="drum-pad">
-            <audio class="clip" src="" id="A">A</audio>
+            <audio class="clip" id="A">
+              <source src="" type=""></source>
+              A
+            </audio>
           </div>
           <div class="drum-pad">
-            <audio class="clip" src="" id="S">S</audio>
+            <audio class="clip" id="S">
+              <source src="" type=""></source>
+              S
+            </audio>
           </div>
           <div class="drum-pad">
-            <audio class="clip" src="" id="D">D</audio>
+            <audio class="clip" id="D">
+              <source src="" type=""></source>
+              D
+            </audio>
           </div>
           <div class="drum-pad">
-            <audio class="clip" src="" id="Z">Z</audio>
+            <audio class="clip" id="Z">
+              <source src="" type=""></source>
+              Z
+            </audio>
           </div>
           <div class="drum-pad">
-            <audio class="clip" src="" id="X">X</audio>
+            <audio class="clip" id="X">
+              <source src="" type=""></source>
+              X
+            </audio>
           </div>
           <div class="drum-pad">
-            <audio class="clip" src="" id="C">C</audio>
+            <audio class="clip" id="C">
+              <source src="" type=""></source>
+              C
+            </audio>
           </div>
         </div>
       </div>
