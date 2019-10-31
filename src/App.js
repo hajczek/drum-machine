@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import s1 from './assets/sounds/s1.mp3';
 import s2 from './assets/sounds/s2.mp3';
 import s3 from './assets/sounds/s3.mp3';
