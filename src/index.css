@@ -3,6 +3,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 .App {
@@ -11,8 +12,9 @@ body {
 }
 
 .container {
-  width: 300px;
-  height: 300px;
+  width: 380px;
+  height: 380px;
+  padding: 20px;
   background-color: #000;
 }
 
@@ -26,6 +28,10 @@ body {
 .drum-pad {
   display: inline-flex;
   width: 100px;
-  height: 100px;
+  height: 65px;
   background-color: #ddd;
+  margin: 13px;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding-top: 35px;
 }
