@@ -12,61 +12,61 @@ import s9 from './assets/sounds/s9.mp3';
 function App() {
   return (
     <div className="App">
-      <div id="drum-machine">
-        <div id="display">
+      <div id="drum-machine" className="drums">
+        <div id="display" class="container">
           <div className="drum-pad">
-            <audio controls className="clip" id="Q">
+            <audio className="clip" id="Q">
               <source src={s1} type="audio/mpeg"></source>
-              Q
             </audio>
+            Q
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="W">
+            <audio className="clip" id="W">
               <source src={s2} type="audio/mpeg"></source>
-              W
             </audio>
+            W
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="E">
+            <audio className="clip" id="E">
              <source src={s3} type="audio/mpeg"></source>
-              E
             </audio>
+            E
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="A">
+            <audio className="clip" id="A">
               <source src={s4} type="audio/mpeg"></source>
-              A
             </audio>
+            A
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="S">
+            <audio className="clip" id="S">
               <source src={s5} type="audio/mpeg"></source>
-              S
             </audio>
+            S
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="D">
+            <audio className="clip" id="D">
               <source src={s6} type="audio/mpeg"></source>
-              D
             </audio>
+            D
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="Z">
+            <audio className="clip" id="Z">
               <source src={s7} type="audio/mpeg"></source>
-              Z
             </audio>
+            Z
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="X">
+            <audio className="clip" id="X">
               <source src={s8} type="audio/mpeg"></source>
-              X
             </audio>
+            X
           </div>
           <div className="drum-pad">
-            <audio controls className="clip" id="C">
+            <audio className="clip" id="C">
               <source src={s9} type="audio/mpeg"></source>
-              C
             </audio>
+            C
           </div>
         </div>
       </div>
