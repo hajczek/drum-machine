@@ -82,6 +82,9 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <div className="panel">
+          <div className="display-text"></div>
+        </div>
       </div>
     );
   }  
