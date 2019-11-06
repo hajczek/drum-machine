@@ -24,7 +24,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>DRUM MACHINE PANEL</h1>
         <div id="drum-machine" className="drums">
+        
           <div id="display" className="container">
             <div className="drum-pad" onClick={this.playSound}>
               <audio className="clip" id="Q">
@@ -81,9 +83,10 @@ class App extends Component {
               C
             </div>
           </div>
-        </div>
-        <div className="panel">
-          <div className="display-text"></div>
+          <div className="panel">
+            <h2>PANEL</h2>
+            <p className="display-text">Test text</p>
+          </div>
         </div>
       </div>
     );

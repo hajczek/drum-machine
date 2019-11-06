@@ -11,18 +11,29 @@ body {
   height: 100%;
 }
 
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.drums {
+  width: 620px;
+  height: 420px;
+  margin: 0 auto;
+  background-color: #eee;
+  position: relative;
+  top: 30px;
+}
+
 .container {
   width: 380px;
   height: 380px;
   padding: 20px;
   background-color: #000;
-}
-
-.drums {
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-  background-color: #eee;
+  margin: 0;
+  display: block;
+  float: left;
 }
 
 .drum-pad {
@@ -34,4 +45,31 @@ body {
   font-size: 1.5rem;
   justify-content: center;
   padding-top: 35px;
+  cursor: pointer;
+}
+
+.panel {
+  display: block;
+  float: left;
+  width: 140px;
+  padding: 10px;
+  background-color: #fff;
+  margin: 20px 0 0 20px;
+}
+
+.panel h2 {
+  width: 100%;
+  display: block;
+  float: left; 
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.display-text {
+  width: 100%;
+  display: block;
+  float: left;
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px 0;
 }
