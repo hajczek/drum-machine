@@ -17,8 +17,10 @@ class App extends Component {
     };
   }
 
-  playSound(){
-    console.log('It was clicked');
+  playSound(e){
+    const textField = document.getElementById('text-field');
+    // Display name of pad on text field
+    textField.innerHTML = e.target.textContent;
   }
 
   render() {
@@ -85,7 +87,7 @@ class App extends Component {
           </div>
           <div className="panel">
             <h2>PANEL</h2>
-            <p className="display-text">Test text</p>
+            <p className="display-text" id="text-field"></p>
           </div>
         </div>
       </div>
