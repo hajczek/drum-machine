@@ -10,17 +10,17 @@ import s8 from './assets/sounds/s8.mp3';
 import s9 from './assets/sounds/s9.mp3';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      
+
     };
   }
 
-  playSound(e){
+  playSound(e) {
     const textField = document.getElementById('text-field');
     // Display name of pad on text field
-    textField.innerHTML = e.target.textContent;
+    textField.innerHTML = e.target.title;
   }
 
   render() {
@@ -28,57 +28,57 @@ class App extends Component {
       <div className="App">
         <h1>DRUM MACHINE PANEL</h1>
         <div id="drum-machine" className="drums">
-        
+
           <div id="display" className="container">
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound Q">
               <audio className="clip" id="Q">
                 <source src={s1} type="audio/mpeg"></source>
               </audio>
               Q
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound W">
               <audio className="clip" id="W">
                 <source src={s2} type="audio/mpeg"></source>
               </audio>
               W
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound E">
               <audio className="clip" id="E">
-               <source src={s3} type="audio/mpeg"></source>
+                <source src={s3} type="audio/mpeg"></source>
               </audio>
               E
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound A">
               <audio className="clip" id="A">
                 <source src={s4} type="audio/mpeg"></source>
               </audio>
               A
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound S">
               <audio className="clip" id="S">
                 <source src={s5} type="audio/mpeg"></source>
               </audio>
               S
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound D">
               <audio className="clip" id="D">
                 <source src={s6} type="audio/mpeg"></source>
               </audio>
               D
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound Z">
               <audio className="clip" id="Z">
                 <source src={s7} type="audio/mpeg"></source>
               </audio>
               Z
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound X">
               <audio className="clip" id="X">
                 <source src={s8} type="audio/mpeg"></source>
               </audio>
               X
             </div>
-            <div className="drum-pad" onClick={this.playSound}>
+            <div className="drum-pad" onClick={this.playSound} title="Sound C">
               <audio className="clip" id="C">
                 <source src={s9} type="audio/mpeg"></source>
               </audio>
@@ -87,12 +87,12 @@ class App extends Component {
           </div>
           <div className="panel">
             <h2>PANEL</h2>
-            <p className="display-text" id="text-field"></p>
+            <p className="display-text" id="text-field">Sound name</p>
           </div>
         </div>
       </div>
     );
-  }  
+  }
 }
 
 export default App;
