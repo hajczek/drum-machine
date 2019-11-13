@@ -9,6 +9,8 @@ import s7 from './assets/sounds/s7.mp3';
 import s8 from './assets/sounds/s8.mp3';
 import s9 from './assets/sounds/s9.mp3';
 
+const sounds = ['Q', 'W', 'E', 'A', 'S', 'D', 'Z', 'X', 'C'];
+const charCodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +20,15 @@ class App extends Component {
     };
   }
 
+  componentDidMount = () => {
+    // Listens for keydown event
+    document.onkeydown = (e) => {
+      e = e || window.event;
+      var key = e.which || e.keyCode;
+      charCodes.map((code) => key == code ? console.log(code) : false);
+    }
+  }
+
   playSound(e) {
     const textField = document.getElementById('text-field');
     // Display name of pad on text field
@@ -25,9 +36,8 @@ class App extends Component {
   }
 
   render() {
-    const sounds = ['Q', 'W', 'E', 'A', 'S', 'D', 'Z', 'X', 'C'];
     return (
-      <div className="App">
+      <div className="App" >
         <h1>DRUM MACHINE PANEL</h1>
         <div id="drum-machine" className="drums">
           <div id="display" className="container">
