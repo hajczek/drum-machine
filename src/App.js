@@ -10,31 +10,32 @@ import s8 from "./assets/sounds/s8.mp3";
 import s9 from "./assets/sounds/s9.mp3";
 
 const soundsName = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"];
-const charCodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
+// const charCodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
 const sounds = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
+class App extends React.Component {
   componentDidMount = () => {
     // Listens for keydown event
     document.onkeydown = e => {
       e = e || window.event;
-      var key = e.which || e.keyCode;
-      charCodes.map(code => (key == code ? console.log(code) : false));
+      let key = e.which || e.keyCode;
+      // Take name of key by keyCode
+      let pad = String.fromCharCode(key);
+      // Use name of key for find suitable element to active
+      let activePad = document.getElementById(pad);
+      // Play sound
+      activePad.play();
     };
   };
 
   soundPlay(e) {
+    // Define an active element
     let activePad = e.target.firstChild;
-    console.log(activePad);
+    // Play sound
     activePad.play();
 
-    const textField = document.getElementById("text-field");
     // Display name of pad on text field
+    const textField = document.getElementById("text-field");
     textField.innerHTML = e.target.title;
   }
 
