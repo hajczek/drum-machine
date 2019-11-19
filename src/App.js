@@ -57,6 +57,7 @@ class App extends Component {
                 >
                   <audio className="clip" id={soundsName[i]} title={pads[i]}>
                     <source src={sounds[i]} type="audio/mpeg"></source>
+                    Your browser does not support the audio!
                   </audio>
                   {soundsName[i]}
                 </div>
