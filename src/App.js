@@ -69,6 +69,8 @@ class App extends Component {
             <p className="display-text" id="text-field">
               Sound name
             </p>
+            <h4>Volume control</h4>
+            <input type="range" name="volume" step="0.01" min="0" max="1" value="0.3"></input>
           </div>
         </div>
       </div>
