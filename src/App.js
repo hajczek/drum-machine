@@ -17,7 +17,7 @@ const audio = document.querySelector('audio');
 
 class App extends Component {
   state = {
-    value: 0.3
+    volume: 0.3
   }
   componentDidMount(e) {
     // Listens for keydown event
@@ -28,7 +28,7 @@ class App extends Component {
       let pad = String.fromCharCode(key);
       // Use name of key for find suitable element to active
       let activePad = document.getElementById(pad);
-      // Play sound
+      // Display name of key on text field
       const textField = document.getElementById("text-field");
       textField.innerHTML = activePad.title;
     };
@@ -39,7 +39,6 @@ class App extends Component {
     let activePad = e.target.firstChild;
     // Play sound
     activePad.play();
-
     // Display name of pad on text field
     const textField = document.getElementById("text-field");
     textField.innerHTML = e.target.title;
@@ -47,9 +46,28 @@ class App extends Component {
 
   changeVolume = (e) => {
     this.setState({
-      value: e.target.value
-    })
-    console.log(e.target.value);
+      volume: e.target.value
+    });
+    let qVol = document.getElementById('Q');
+    let wVol = document.getElementById('W');
+    let eVol = document.getElementById('E');
+    let aVol = document.getElementById('A');
+    let sVol = document.getElementById('S');
+    let dVol = document.getElementById('D');
+    let zVol = document.getElementById('Z');
+    let xVol = document.getElementById('X');
+    let cVol = document.getElementById('C');
+    qVol.volume = this.state.volume;
+    wVol.volume = this.state.volume;
+    eVol.volume = this.state.volume;
+    aVol.volume = this.state.volume;
+    sVol.volume = this.state.volume;
+    dVol.volume = this.state.volume;
+    zVol.volume = this.state.volume;
+    xVol.volume = this.state.volume;
+    cVol.volume = this.state.volume;
+    const textField = document.getElementById("text-field");
+    textField.innerHTML = `Volume: ${this.state.volume}`;
   }
 
   render() {
@@ -78,10 +96,10 @@ class App extends Component {
           <div className="panel">
             <h2>PANEL</h2>
             <p className="display-text" id="text-field">
-              Sound name
+              Display info ...
             </p>
             <h4>Volume control</h4>
-            <input type="range" name="volume" step={0.01} min={0.0} max={0.1} value={this.state.value} onChange={this.changeVolume}></input>
+            <input type="range" name="volume" min={0} max={1} step={0.1} value={this.state.volume} onChange={this.changeVolume}></input>
           </div>
         </div>
       </div>
