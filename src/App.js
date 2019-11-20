@@ -13,8 +13,12 @@ const soundsName = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"];
 const sounds = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
 const pads = ["Pad 1", "Pad 2", "Pad 3", "Pad 4", "Pad 5", "Pad 6", "Pad 7", "Pad 8", "Pad 9"];
 // const charCodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
+const audio = document.querySelector('audio');
 
 class App extends Component {
+  state = {
+    value: 0.3
+  }
   componentDidMount(e) {
     // Listens for keydown event
     document.onkeydown = e => {
@@ -41,6 +45,13 @@ class App extends Component {
     textField.innerHTML = e.target.title;
   }
 
+  changeVolume = (e) => {
+    this.setState({
+      value: e.target.value
+    })
+    console.log(e.target.value);
+  }
+
   render() {
     return (
       <div className="App">
@@ -65,12 +76,12 @@ class App extends Component {
             })}
           </div>
           <div className="panel">
-            <h2> PANEL </h2>
+            <h2>PANEL</h2>
             <p className="display-text" id="text-field">
               Sound name
             </p>
             <h4>Volume control</h4>
-            <input type="range" name="volume" step="0.01" min="0" max="1" value="0.3"></input>
+            <input type="range" name="volume" step={0.01} min={0.0} max={0.1} value={this.state.value} onChange={this.changeVolume}></input>
           </div>
         </div>
       </div>
