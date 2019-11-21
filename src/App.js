@@ -34,7 +34,7 @@ class App extends Component {
     };
   }
 
-  soundPlay(e) {
+  soundPlay = (e) => {
     // Define an active element
     let activePad = e.target.firstChild;
     // Play sound
