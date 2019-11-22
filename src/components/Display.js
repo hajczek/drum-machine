@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Audio from './Audio';
 
 class Display extends Component {
   render(props) {
@@ -13,10 +14,11 @@ class Display extends Component {
               title={"Sound " + soundsName[i]}
               key={i}
             >
-              <audio className="clip" id={soundsName[i]} title={pads[i]}>
-                <source src={sounds[i]} type="audio/mpeg"></source>
-                Your browser does not support the audio!
-                  </audio>
+              <Audio
+                pads={pads[i]}
+                sounds={sounds[i]}
+                soundsName={soundsName[i]}
+              />
               {soundsName[i]}
             </div>
           );
