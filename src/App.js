@@ -26,6 +26,8 @@ class App extends Component {
       let pad = String.fromCharCode(key);
       // Use name of key for find suitable element to active
       let activePad = document.getElementById(pad);
+      // Play sound
+      activePad.play();
       // Display name of key on text field
       const textField = document.getElementById("text-field");
       textField.innerHTML = activePad.title;
