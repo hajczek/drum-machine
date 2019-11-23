@@ -43,6 +43,10 @@ class App extends Component {
   }
 
   changeVolume = (e) => {
+    const textField = document.getElementById("text-field");
+    // textField.innerHTML = `Volume: ${this.state.volume}`;
+    textField.innerHTML = `Volume: ${e.target.value}`;
+
     this.setState({
       volume: e.target.value
     });
@@ -65,9 +69,6 @@ class App extends Component {
     zVol.volume = this.state.volume;
     xVol.volume = this.state.volume;
     cVol.volume = this.state.volume;
-
-    const textField = document.getElementById("text-field");
-    textField.innerHTML = `Volume: ${this.state.volume}`;
   }
 
   render() {
