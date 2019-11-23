@@ -53,24 +53,10 @@ class App extends Component {
       volume: e.target.value
     });
 
-    let qVol = document.getElementById('Q');
-    let wVol = document.getElementById('W');
-    let eVol = document.getElementById('E');
-    let aVol = document.getElementById('A');
-    let sVol = document.getElementById('S');
-    let dVol = document.getElementById('D');
-    let zVol = document.getElementById('Z');
-    let xVol = document.getElementById('X');
-    let cVol = document.getElementById('C');
-    qVol.volume = this.state.volume;
-    wVol.volume = this.state.volume;
-    eVol.volume = this.state.volume;
-    aVol.volume = this.state.volume;
-    sVol.volume = this.state.volume;
-    dVol.volume = this.state.volume;
-    zVol.volume = this.state.volume;
-    xVol.volume = this.state.volume;
-    cVol.volume = this.state.volume;
+    // Set level of volume for each pad
+    for (let i = 0; i < this.state.soundsName.length; i++) {
+      document.getElementById(this.state.soundsName[i]).volume = this.state.volume;
+    }
   }
 
   render() {
