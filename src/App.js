@@ -30,8 +30,12 @@ class App extends Component {
       activePad.play();
       // Change color of pad
       let parent = activePad.parentNode;
-      parent.style.backgroundColor = '#fff';
-      setTimeout(() => { parent.style.backgroundColor = '#eee' }, 300);
+      parent.style.backgroundColor = '#e2f8fd';
+      parent.style.boxShadow = '0 0 10px 10px #444';
+      setTimeout(() => {
+        parent.style.backgroundColor = '#eee';
+        parent.style.boxShadow = '0 0 10px 10px #000';
+      }, 300);
       // Display name of key on text field
       const textField = document.getElementById("text-field");
       textField.innerHTML = activePad.title;
