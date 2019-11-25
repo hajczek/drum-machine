@@ -9,7 +9,7 @@ body {
 .App {
   width: 420px;
   height: 100%;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 
 h1 {
@@ -86,6 +86,7 @@ h4 {
   padding: 10px 0;
   border: 1px solid #eee;
   color: #888;
+  margin: 15px 0;
 }
 
 input#volume {
