@@ -62,7 +62,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>DRUM MACHINE PANEL</h1>
+        <h1>DRUM MACHINE</h1>
         <DrumMachine
           sounds={this.state.sounds}
           soundPlay={this.soundPlay}

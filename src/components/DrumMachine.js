@@ -8,15 +8,15 @@ class DrumMachine extends Component {
     const { soundPlay, soundsName, pads, sounds, volume, changeVolume } = this.props;
     return (
       <div id="drum-machine" className="drums">
+        <Panel
+          volume={volume}
+          changeVolume={changeVolume}
+        />
         <Display
           soundPlay={soundPlay}
           soundsName={soundsName}
           pads={pads}
           sounds={sounds}
-        />
-        <Panel
-          volume={volume}
-          changeVolume={changeVolume}
         />
       </div>
 

@@ -7,48 +7,49 @@ body {
 }
 
 .App {
-  width: 100%;
+  width: 420px;
   height: 100%;
+  margin: 0 auto;
 }
 
 h1 {
-  width: 100%;
+  width: 420px;
   text-align: center;
-  margin-top: 50px;
+  margin: 0 auto;;
+  background-color: #000;
+  color: #eee;
+  padding: 20px 0;
 }
 
 h4 {
   text-align: center;
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 0;
   float: left;
   width: 100%;
-  margin-top: 20px;
 }
 
 .drums {
-  width: 620px;
-  height: 420px;
+  width: 420px;
+  height: 600px;
   margin: 0 auto;
-  background-color: #eee;
-  position: relative;
-  top: 30px;
+  background-color: #f7fbfc;
 }
 
 .container {
-  width: 380px;
-  height: 380px;
-  padding: 20px;
+  width: 340px;
+  height: 340px;
   background-color: #000;
-  margin: 0;
+  margin-left: 20px;
   display: block;
   float: left;
+  padding: 20px;
 }
 
 .drum-pad {
   display: inline-flex;
-  width: 100px;
-  height: 65px;
+  width: 87px;
+  height: 55px;
   background-color: #ddd;
   margin: 13px;
   font-size: 1.5rem;
@@ -60,18 +61,20 @@ h4 {
 .panel {
   display: block;
   float: left;
-  width: 140px;
-  padding: 10px;
+  width: 380px;
+  padding: 20px;
   background-color: #fff;
-  margin: 20px 0 0 20px;
+  margin:0;
+  background-color: #f7fbfc;
 }
 
 .panel h2 {
   width: 100%;
   display: block;
   float: left; 
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
+  margin: 0;
 }
 
 .display-text {
@@ -79,6 +82,10 @@ h4 {
   display: block;
   float: left;
   text-align: center;
-  background-color: #ddd;
+  background-color: #eee;
   padding: 10px 0;
+}
+
+input#volume {
+  width: 100%;
 }
