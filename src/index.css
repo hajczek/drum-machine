@@ -59,6 +59,11 @@ h4 {
   box-shadow: 0 0 10px 10px #000;
 }
 
+.active {
+  background-color: #e2f8fd;
+  box-shadow: 0 0 10px 10px #444;
+}
+
 .panel {
   display: block;
   float: left;

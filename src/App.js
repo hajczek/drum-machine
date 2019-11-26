@@ -30,11 +30,10 @@ class App extends Component {
       activePad.play();
       // Change color of pad
       let parent = activePad.parentNode;
-      parent.style.backgroundColor = '#e2f8fd';
-      parent.style.boxShadow = '0 0 10px 10px #444';
+      parent.classList.add('active');
       setTimeout(() => {
-        parent.style.backgroundColor = '#eee';
-        parent.style.boxShadow = '0 0 10px 10px #000';
+        parent.classList.remove('active');
+        parent.classList.add('drum-pad');
       }, 300);
       // Display name of key on text field
       const textField = document.getElementById("text-field");
@@ -43,18 +42,24 @@ class App extends Component {
   }
 
   soundPlay = (e) => {
+    // Change color of pad
+    e.persist();
+    e.target.classList.add('active');
+    setTimeout(() => {
+      e.target.classList.remove('active');
+      e.target.classList.add('drum-pad');
+    }, 300);
     // Define an active element
     let activePad = e.target.firstChild;
     // Play sound
     activePad.play();
-    // Display name of pad on text field
+    // Display name of pad on text field  
     const textField = document.getElementById("text-field");
     textField.innerHTML = e.target.title;
   }
 
   changeVolume = (e) => {
     const textField = document.getElementById("text-field");
-    // textField.innerHTML = `Volume: ${this.state.volume}`;
     textField.innerHTML = `Volume: ${e.target.value}`;
 
     this.setState({
