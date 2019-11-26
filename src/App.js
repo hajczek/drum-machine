@@ -16,6 +16,7 @@ class App extends Component {
     soundsName: ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"],
     sounds: [s1, s2, s3, s4, s5, s6, s7, s8, s9],
     pads: ["Pad 1", "Pad 2", "Pad 3", "Pad 4", "Pad 5", "Pad 6", "Pad 7", "Pad 8", "Pad 9"],
+    className: 'active'
   }
   componentDidMount(e) {
     // Listens for keydown event
@@ -30,10 +31,9 @@ class App extends Component {
       activePad.play();
       // Change color of pad
       let parent = activePad.parentNode;
-      parent.classList.add('active');
+      parent.classList.add(this.state.className);
       setTimeout(() => {
-        parent.classList.remove('active');
-        parent.classList.add('drum-pad');
+        parent.classList.remove(this.state.className);
       }, 300);
       // Display name of key on text field
       const textField = document.getElementById("text-field");
@@ -44,10 +44,9 @@ class App extends Component {
   soundPlay = (e) => {
     // Change color of pad
     e.persist();
-    e.target.classList.add('active');
+    e.target.classList.add(this.state.className);
     setTimeout(() => {
-      e.target.classList.remove('active');
-      e.target.classList.add('drum-pad');
+      e.target.classList.remove(this.state.className);
     }, 300);
     // Define an active element
     let activePad = e.target.firstChild;
