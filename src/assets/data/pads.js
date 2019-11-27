@@ -1,0 +1,1 @@
+export const pads = ["Pad 1", "Pad 2", "Pad 3", "Pad 4", "Pad 5", "Pad 6", "Pad 7", "Pad 8", "Pad 9"];

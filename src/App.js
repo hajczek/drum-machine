@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { pads } from "./assets/data/pads";
+import { soundsName } from "./assets/data/soundsName";
 import DrumMachine from './components/DrumMachine';
 import s1 from "./assets/sounds/s1.mp3";
 import s2 from "./assets/sounds/s2.mp3";
@@ -13,9 +15,9 @@ import s9 from "./assets/sounds/s9.mp3";
 class App extends Component {
   state = {
     volume: 0.3,
-    soundsName: ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"],
+    soundsName: soundsName,
     sounds: [s1, s2, s3, s4, s5, s6, s7, s8, s9],
-    pads: ["Pad 1", "Pad 2", "Pad 3", "Pad 4", "Pad 5", "Pad 6", "Pad 7", "Pad 8", "Pad 9"],
+    pads: pads,
     className: 'active',
     textInfo: 'Info ...'
   }

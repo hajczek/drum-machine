@@ -1,0 +1,1 @@
+export const soundsName = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"];
