@@ -5,12 +5,13 @@ import Panel from './Panel';
 class DrumMachine extends Component {
 
   render(props) {
-    const { soundPlay, soundsName, pads, sounds, volume, changeVolume } = this.props;
+    const { soundPlay, soundsName, pads, sounds, volume, changeVolume, textInfo } = this.props;
     return (
       <div id="drum-machine" className="drums">
         <Panel
           volume={volume}
           changeVolume={changeVolume}
+          textInfo={textInfo}
         />
         <Display
           soundPlay={soundPlay}

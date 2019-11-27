@@ -16,10 +16,12 @@ class App extends Component {
     soundsName: ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"],
     sounds: [s1, s2, s3, s4, s5, s6, s7, s8, s9],
     pads: ["Pad 1", "Pad 2", "Pad 3", "Pad 4", "Pad 5", "Pad 6", "Pad 7", "Pad 8", "Pad 9"],
-    className: 'active'
+    className: 'active',
+    textInfo: 'Info ...'
   }
+
   componentDidMount(e) {
-    // Listens for keydown event
+    // Listen for keydown event
     document.onkeydown = e => {
       e = e || window.event;
       let key = e.which || e.keyCode;
@@ -29,15 +31,18 @@ class App extends Component {
       let activePad = document.getElementById(pad);
       // Play sound
       activePad.play();
+
       // Change color of pad
       let parent = activePad.parentNode;
       parent.classList.add(this.state.className);
       setTimeout(() => {
         parent.classList.remove(this.state.className);
       }, 300);
+
       // Display name of key on text field
-      const textField = document.getElementById("text-field");
-      textField.innerHTML = activePad.title;
+      this.setState({
+        textInfo: activePad.title
+      })
     };
   }
 
@@ -48,13 +53,16 @@ class App extends Component {
     setTimeout(() => {
       e.target.classList.remove(this.state.className);
     }, 300);
+
     // Define an active element
     let activePad = e.target.firstChild;
     // Play sound
     activePad.play();
-    // Display name of pad on text field  
-    const textField = document.getElementById("text-field");
-    textField.innerHTML = e.target.title;
+
+    // Display name of pad on text field
+    this.setState({
+      textInfo: e.target.title
+    })
   }
 
   changeVolume = (e) => {
@@ -82,6 +90,7 @@ class App extends Component {
           pads={this.state.pads}
           changeVolume={this.changeVolume}
           volume={this.state.volume}
+          textInfo={this.state.textInfo}
         />
       </div>
     );
