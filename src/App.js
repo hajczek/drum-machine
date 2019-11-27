@@ -35,6 +35,7 @@ class App extends Component {
       // Change color of pad
       let parent = activePad.parentNode;
       parent.classList.add(this.state.className);
+
       setTimeout(() => {
         parent.classList.remove(this.state.className);
       }, 300);
@@ -66,11 +67,10 @@ class App extends Component {
   }
 
   changeVolume = (e) => {
-    const textField = document.getElementById("text-field");
-    textField.innerHTML = `Volume: ${e.target.value}`;
 
     this.setState({
-      volume: e.target.value
+      volume: e.target.value,
+      textInfo: e.target.value
     });
 
     // Set level of volume for each pad
