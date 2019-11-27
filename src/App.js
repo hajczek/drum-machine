@@ -37,7 +37,6 @@ class App extends Component {
       // Change color of pad
       let parent = activePad.parentNode;
       parent.classList.add(this.state.className);
-
       setTimeout(() => {
         parent.classList.remove(this.state.className);
       }, 300);
@@ -50,8 +49,8 @@ class App extends Component {
   }
 
   soundPlay = (e) => {
-    // Change color of pad
     e.persist();
+    // Change color of pad    
     e.target.classList.add(this.state.className);
     setTimeout(() => {
       e.target.classList.remove(this.state.className);
@@ -69,12 +68,10 @@ class App extends Component {
   }
 
   changeVolume = (e) => {
-
     this.setState({
       volume: e.target.value,
       textInfo: e.target.value
     });
-
     // Set level of volume for each pad
     for (let i = 0; i < this.state.soundsName.length; i++) {
       document.getElementById(this.state.soundsName[i]).volume = this.state.volume;
