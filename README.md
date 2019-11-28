@@ -2,7 +2,9 @@
 
 ## DESCRIPTION - How this code works
 
-After clicking on button or on keyboard key written on each button the sound is played, and button change the color for 300 miliseconds.
+After clicking on the button or keyboard key with the name written on each button the sound is played, and the button changes the color for 300 milliseconds. 
+Users can set the level of volume for sounds in the panel.
+On the text field displays the name of the clicked button or level of volume, when is change.
 
 ### USED FOR THIS APPLICATION
 
