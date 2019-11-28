@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/hajczek/drum-machine/static/css/main.19a86833.chunk.css",
+    "main.js": "/hajczek/drum-machine/static/js/main.5e467187.chunk.js",
+    "main.js.map": "/hajczek/drum-machine/static/js/main.5e467187.chunk.js.map",
+    "runtime-main.js": "/hajczek/drum-machine/static/js/runtime-main.f2cac3d1.js",
+    "runtime-main.js.map": "/hajczek/drum-machine/static/js/runtime-main.f2cac3d1.js.map",
+    "static/js/2.b33341eb.chunk.js": "/hajczek/drum-machine/static/js/2.b33341eb.chunk.js",
+    "static/js/2.b33341eb.chunk.js.map": "/hajczek/drum-machine/static/js/2.b33341eb.chunk.js.map",
+    "index.html": "/hajczek/drum-machine/index.html",
+    "precache-manifest.d63223bc3831e19f47443ef8292933c0.js": "/hajczek/drum-machine/precache-manifest.d63223bc3831e19f47443ef8292933c0.js",
+    "service-worker.js": "/hajczek/drum-machine/service-worker.js",
+    "static/css/main.19a86833.chunk.css.map": "/hajczek/drum-machine/static/css/main.19a86833.chunk.css.map",
+    "static/media/s1.mp3": "/hajczek/drum-machine/static/media/s1.fc46d835.mp3",
+    "static/media/s2.mp3": "/hajczek/drum-machine/static/media/s2.1c679e17.mp3",
+    "static/media/s3.mp3": "/hajczek/drum-machine/static/media/s3.b6731b46.mp3",
+    "static/media/s4.mp3": "/hajczek/drum-machine/static/media/s4.7290a33a.mp3",
+    "static/media/s5.mp3": "/hajczek/drum-machine/static/media/s5.f8c3e6df.mp3",
+    "static/media/s6.mp3": "/hajczek/drum-machine/static/media/s6.1d33f90d.mp3",
+    "static/media/s7.mp3": "/hajczek/drum-machine/static/media/s7.59f9d53f.mp3",
+    "static/media/s8.mp3": "/hajczek/drum-machine/static/media/s8.e55cab00.mp3",
+    "static/media/s9.mp3": "/hajczek/drum-machine/static/media/s9.27d8ea2e.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2cac3d1.js",
+    "static/js/2.b33341eb.chunk.js",
+    "static/css/main.19a86833.chunk.css",
+    "static/js/main.5e467187.chunk.js"
+  ]
+}
